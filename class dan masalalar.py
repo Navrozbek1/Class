@@ -122,7 +122,7 @@
 # )
 
 
-"""## Task 5: Sportchilar Ro’yxati"""
+"""Task 5: Sportchilar Ro’yxati"""
 
 # class Sportchi:
 #     def __init__(self, ismi, yoshi, soprt_turi):
@@ -149,3 +149,28 @@
 #
 # print("=== ENG YOSH SPORTCHI ===")
 # print(f"Ismi: {x.ismi}\nYoshi: {x.yoshi}\nSport turi: {x.soprt_turi}")
+
+
+"""Task 6: Xodimlar Ro'yxati"""
+
+
+class Xodim:
+    def __init__(self, ismi, lavozimi, maoshi):
+        self.ismi = ismi
+        self.lavozimi = lavozimi
+        self.maoshi = maoshi
+
+ali = Xodim("Ali", "Dasturchi", "5000000")
+vali = Xodim("Vali", "Dizayner", "4000000")
+hasan = Xodim("Hasan", "Menejer", "7000000")
+husan = Xodim("Husan", "Tester", "3500000")
+olim = Xodim("Olim", "DevOps", "6000000")
+
+print("=== XODIMLAR RO'YXATI ===")
+print(f"{ali.ismi} - {ali.lavozimi}, {ali.maoshi}")
+print(f"{vali.ismi} - {vali.lavozimi}, {vali.maoshi}")
+print(f"{hasan.ismi} - {hasan.lavozimi}, {hasan.maoshi}")
+print(f"{husan.ismi} - {husan.lavozimi}, {husan.maoshi}")
+print(f"{olim.ismi} - {olim.lavozimi}, {olim.maoshi}\n")
+
+print("=== ENG KATTA MAOSHLI XODIM ===")
