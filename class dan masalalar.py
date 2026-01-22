@@ -142,35 +142,152 @@
 # print(f"{husan.ismi} - {husan.yoshi} yosh, {husan.soprt_turi}")
 # print(f"{olim.ismi} - {olim.yoshi} yosh, {olim.soprt_turi}\n")
 #
-# min_yosh = 0
+# eng_yosh = ali
+#
 # for x in [ali, vali, hasan, husan, olim]:
-#     if int(x.yoshi) > int(min_yosh):
-#         min_yosh = x.yoshi
+#     if int(x.yoshi) < int(eng_yosh.yoshi):
+#         eng_yosh = x
 #
 # print("=== ENG YOSH SPORTCHI ===")
-# print(f"Ismi: {x.ismi}\nYoshi: {x.yoshi}\nSport turi: {x.soprt_turi}")
+# print(f"Ismi: {eng_yosh.ismi}\nYoshi: {eng_yosh.yoshi}\nSport turi: {eng_yosh.soprt_turi}")
 
 
 """Task 6: Xodimlar Ro'yxati"""
 
 
-class Xodim:
-    def __init__(self, ismi, lavozimi, maoshi):
-        self.ismi = ismi
-        self.lavozimi = lavozimi
-        self.maoshi = maoshi
+# class Xodim:
+#     def __init__(self, ismi, lavozimi, maoshi):
+#         self.ismi = ismi
+#         self.lavozimi = lavozimi
+#         self.maoshi = maoshi
+#
+# ali = Xodim("Ali", "Dasturchi", "5000000")
+# vali = Xodim("Vali", "Dizayner", "4000000")
+# hasan = Xodim("Hasan", "Menejer", "7000000")
+# husan = Xodim("Husan", "Tester", "3500000")
+# olim = Xodim("Olim", "DevOps", "6000000")
+#
+# print("=== XODIMLAR RO'YXATI ===")
+# print(f"{ali.ismi} - {ali.lavozimi}, {ali.maoshi}")
+# print(f"{vali.ismi} - {vali.lavozimi}, {vali.maoshi}")
+# print(f"{hasan.ismi} - {hasan.lavozimi}, {hasan.maoshi}")
+# print(f"{husan.ismi} - {husan.lavozimi}, {husan.maoshi}")
+# print(f"{olim.ismi} - {olim.lavozimi}, {olim.maoshi}\n")
+#
+# print("=== ENG KATTA MAOSHLI XODIM ===")
+#
+# eng_katta = ali
+#
+# for x in [ali, vali, hasan, husan, olim]:
+#     if int(x.maoshi) > int(eng_katta.maoshi):
+#         eng_katta = x
+# print(f"Ismi: {eng_katta.ismi}\nLavozimi: {eng_katta.lavozimi}\nMaoshi: {eng_katta.maoshi} so'm")
 
-ali = Xodim("Ali", "Dasturchi", "5000000")
-vali = Xodim("Vali", "Dizayner", "4000000")
-hasan = Xodim("Hasan", "Menejer", "7000000")
-husan = Xodim("Husan", "Tester", "3500000")
-olim = Xodim("Olim", "DevOps", "6000000")
+"""Task 7: Avtomobillar Saloni"""
 
-print("=== XODIMLAR RO'YXATI ===")
-print(f"{ali.ismi} - {ali.lavozimi}, {ali.maoshi}")
-print(f"{vali.ismi} - {vali.lavozimi}, {vali.maoshi}")
-print(f"{hasan.ismi} - {hasan.lavozimi}, {hasan.maoshi}")
-print(f"{husan.ismi} - {husan.lavozimi}, {husan.maoshi}")
-print(f"{olim.ismi} - {olim.lavozimi}, {olim.maoshi}\n")
+# class Avtomobil:
+#     def __init__(self, modeli, rangi, yili):
+#         self.modeli = modeli
+#         self.rangi = rangi
+#         self.yili = yili
 
-print("=== ENG KATTA MAOSHLI XODIM ===")
+# chevrolet = Avtomobil("Chevrolet Malibu", "Oq", 2020)
+# toyota = Avtomobil("Toyota Camry", "Qora", 2022)
+# hyundai = Avtomobil("Hyundai Sonata", "Kumush", 2019)
+# kia = Avtomobil("Kia K5", "Ko'k", 2023)
+# bmw = Avtomobil("BMW X5", "Qizil", 2021)
+
+# print("=== AVTOMOBILLAR RO'YXATI ===")
+# for auto in [chevrolet, toyota, hyundai, kia, bmw]:
+#     print(f"{auto.modeli} ({auto.rangi}) - {auto.yili}")
+
+# eng_yangi = chevrolet
+# for auto in [chevrolet, toyota, hyundai, kia, bmw]:
+#     if auto.yili > eng_yangi.yili:
+#         eng_yangi = auto
+
+# print("\n=== ENG YANGI AVTOMOBIL ===")
+# print(f"Modeli: {eng_yangi.modeli}")
+# print(f"Rangi: {eng_yangi.rangi}")
+# print(f"Yili: {eng_yangi.yili}")
+
+
+"""Task 8: Mahsulotlar Ombori"""  
+
+# class Mahsulot:
+#     def __init__(self, nomi, miqdori, narxi):
+#         self.nomi = nomi
+#         self.miqdori = miqdori
+#         self.narxi = narxi
+
+# kompyuter = Mahsulot("Kompyuter", 10, 8000000)
+# monitor = Mahsulot("Monitor", 15, 2000000)
+# klaviatura = Mahsulot("Klaviatura", 20, 200000)
+# sichqoncha = Mahsulot("Sichqoncha", 25, 100000)
+# printer = Mahsulot("Printer", 5, 3000000)
+
+# print("=== MAHSULOTLAR OMBORI ===")
+# print(f"{kompyuter.nomi}: {kompyuter.miqdori} dona x {kompyuter.narxi} = {kompyuter.miqdori * kompyuter.narxi} so'm")
+# print(f"{monitor.nomi}: {monitor.miqdori} dona x {monitor.narxi} = {monitor.miqdori * monitor.narxi} so'm")
+# print(f"{klaviatura.nomi}: {klaviatura.miqdori} dona x {klaviatura.narxi} = {klaviatura.miqdori * klaviatura.narxi} so'm")
+# print(f"{sichqoncha.nomi}: {sichqoncha.miqdori} dona x {sichqoncha.narxi} = {sichqoncha.miqdori * sichqoncha.narxi} so'm")
+# print(f"{printer.nomi}: {printer.miqdori} dona x {printer.narxi} = {printer.miqdori * printer.narxi} so'm\n")
+
+# umumiy_qiymat = 0
+# for i in [kompyuter, monitor, klaviatura, sichqoncha, printer]:
+#     umumiy_qiymat += i.miqdori * i.narxi
+# print(f"UMUMIY QIYMAT: {umumiy_qiymat} so'm")
+
+
+"""Task 9: O'quvchilar Bahosi"""
+
+# class Oquvchi:
+#     def __init__(self, ismi, sinfi, ortacha_baho):
+#         self.ismi = ismi
+#         self.sinfi = sinfi
+#         self.ortacha_baho = ortacha_baho
+
+# ali = Oquvchi("Ali", "9-sinf", 4.5)
+# vali = Oquvchi("Vali", "10-sinf", 4.8)
+# hasan = Oquvchi("Hasan", "9-sinf", 3.9)
+# husan = Oquvchi("Husan", "11-sinf", 4.2)
+# olim = Oquvchi("Olim", "10-sinf", 5.0)  
+
+# print("=== O'QUVCHILAR RO'YXATI ===")
+# for oquvchi in [ali, vali, hasan, husan, olim]:
+#     print(f"{oquvchi.ismi} - {oquvchi.sinfi}, O'rtacha baho: {oquvchi.ortacha_baho}")
+
+# eng_alochi = ali
+# for oquvchi in [ali, vali, hasan, husan, olim]:
+#     if oquvchi.ortacha_baho > eng_alochi.ortacha_baho:
+#         eng_alochi = oquvchi
+
+# print("\n=== ENG A'LOCHI O'QUVCHI ===")
+# print(f"Ismi: {eng_alochi.ismi}")
+# print(f"Sinfi: {eng_alochi.sinfi}")
+# print(f"O'rtacha bahosi: {eng_alochi.ortacha_baho}")
+
+"""Task 10: Uylar Agentligi"""
+
+# class Uy:
+#     def __init__(self, manzili, x_soni, narxi):
+#         self.manzili = manzili
+#         self.x_soni = x_soni
+#         self.narxi = narxi
+
+# uy1 = Uy("Chilonzor", 2, 80000)
+# uy2 = Uy("Yunusobod", 3, 120000)
+# uy3 = Uy("Sergeli", 1, 45000)
+# uy4 = Uy("Mirzo Ulug'bek", 4, 180000)
+# uy5 = Uy("Yakkasaroy", 3, 150000)
+
+# print("=== UYLAR RO'YXATI ===")
+# for uy in [uy1, uy2, uy3, uy4, uy5]:
+#     print(f"{uy.manzili}, {uy.x_soni} xonali - {uy.narxi}$")
+
+# eng_kop_xonali = uy1
+# for uy in [uy1, uy2, uy3, uy4, uy5]:
+#     if uy.x_soni > eng_kop_xonali.x_soni:
+#         eng_kop_xonali = uy
+# print("\n=== ENG KO'P XONALI UY ===")
+# print(f"Manzili: {eng_kop_xonali.manzili}\nXonalar soni: {eng_kop_xonali.x_soni}\nNarxi: {eng_kop_xonali.narxi}$")
