@@ -291,3 +291,189 @@
 #         eng_kop_xonali = uy
 # print("\n=== ENG KO'P XONALI UY ===")
 # print(f"Manzili: {eng_kop_xonali.manzili}\nXonalar soni: {eng_kop_xonali.x_soni}\nNarxi: {eng_kop_xonali.narxi}$")
+
+
+"""Task 11: Filmlar Ro'yxati"""
+
+
+# class Film:
+#     def __init__(self, nomi, yili, reytngi):
+#         self.nomi = nomi
+#         self.yili = yili
+#         self.reytngi = reytngi
+        
+# inception = Film("Inception", 2010, 8.8)
+# dark_knight = Film("The Dark Knight", 2008, 9.0)
+# interstellar = Film("Interstellar", 2014, 8.6)
+# tenet = Film("Tenet", 2020, 7.4)
+# oppenheimer = Film("Oppenheimer", 2023, 8.5)
+
+# print("=== FILMLAR RO'YXATI ===")
+# for film in [inception, dark_knight, interstellar, tenet, oppenheimer]:
+#     print(f"{film.nomi} ({film.yili}) - Reyting: {film.reytngi}")
+    
+# eng_past_reytingli = inception
+# for film in [inception, dark_knight, interstellar, tenet, oppenheimer]:
+#     if film.reytngi < eng_past_reytingli.reytngi:
+#         eng_past_reytingli = film
+
+# print("\n=== ENG PAST REYTINGLI FILM ===")
+# print(f"Nomi: {eng_past_reytingli.nomi}")
+# print(f"Yili: {eng_past_reytingli.yili}")
+# print(f"Reytingi: {eng_past_reytingli.reytngi}")
+
+
+"""Task 12: Hayvonlar Bog'i"""    
+
+# class Hayvon:
+#     def __init__(self, nomi, turi, yoshi):
+#         self.nomi = nomi
+#         self.turi = turi
+#         self.yoshi = yoshi
+        
+# sherxon = Hayvon("Sherxon", "Sher", 8)
+# fila = Hayvon("Fila", "Fil", 25)
+# maymuncha = Hayvon("Maymuncha", "Maymun", 5)
+# jirafchik = Hayvon("Jirafchik", "Jirafa", 12)
+# zebra = Hayvon("Zebra", "Zebra", 6) 
+
+# print("=== HAYVONLAR BOG'I ===")
+# hayvonlar = [sherxon, fila, maymuncha, jirafchik, zebra]
+# for hayvon in hayvonlar:
+#     print(f"{hayvon.nomi} - {hayvon.turi}, {hayvon.yoshi} yosh")
+
+# jami_yosh = 0
+# for hayvon in hayvonlar:
+#     jami_yosh += hayvon.yoshi
+    
+# ortacha_yosh = jami_yosh / len(hayvonlar)
+# print(f"\nJami yosh: {jami_yosh} yosh")
+# print(f"Hayvonlar soni: {len(hayvonlar)}")
+# print(f"O'RTACHA YOSH: {ortacha_yosh} yosh")
+
+
+"""Task 13: Restoran Menyusi"""
+
+# class Taom:
+#     def __init__(self, nomi, kategoriyasi, narxi):
+#         self.nomi = nomi
+#         self.kategoriyasi = kategoriyasi
+#         self.narxi = narxi
+
+# palov = Taom("Palov", "Asosiy taom", 35000)
+# somsa = Taom("Somsa", "Pishiriqlar", 8000)
+# choy = Taom("Choy", "Ichimliklar", 5000)
+# shashlik = Taom("Shashlik", "Asosiy taom", 45000)
+# lagmon = Taom("Lag'mon", "Asosiy taom", 30000)
+
+# print("=== RESTORAN MENYUSI ===")
+# taomlar = [palov, somsa, choy, shashlik, lagmon]
+# for taom in taomlar:
+#     print(f"{taom.nomi} - {taom.kategoriyasi}, {taom.narxi} so'm")
+# print("\n=== ASOSIY TAOMLAR ===")
+# asosiy_taomlar = []
+# for taom in taomlar:
+#     if taom.kategoriyasi == "Asosiy taom":
+#         asosiy_taomlar.append(taom)
+#         print(f"{taom.nomi} - {taom.narxi} so'm")
+
+# umumiy_narx = 0
+# for taom in asosiy_taomlar:
+#     umumiy_narx += taom.narxi
+# print(f"\nAsosiy taomlar narxi: {umumiy_narx} so'm")
+
+
+"""Task 14: Musiqa Albomi"""
+
+
+# class Kurs:
+#     def __init__(self, nomi, davomiyligi, talabalar_soni):
+#         self.nomi = nomi
+#         self.davomiyligi = davomiyligi
+#         self.talabalar_soni = talabalar_soni
+
+# python_asoslari = Kurs("Python asoslari", 40, 150)
+# javascript =Kurs("JavaScript", 35, 120)
+# data_science = Kurs("Data Science", 60, 80)
+# web_development = Kurs("Web Development", 50, 200)
+# mobile_apps = Kurs("Mobile Apps", 45, 95)
+
+# print("=== KURSLAR RO'YXATI ===")
+
+# kurslar = [python_asoslari, javascript, data_science, web_development, mobile_apps]
+# for kurs in kurslar:
+#     print(f"{kurs.nomi} - {kurs.davomiyligi} soat, {kurs.talabalar_soni} talaba")
+    
+# eng_mashhur = python_asoslari
+# for kurs in kurslar:
+#     if kurs.talabalar_soni > eng_mashhur.talabalar_soni:
+#         eng_mashhur = kurs
+# print("\n=== ENG MASHHUR KURS ===")
+# print(f"Nomi: {eng_mashhur.nomi}")
+# print(f"Davomiyligi: {eng_mashhur.davomiyligi} soat")
+# print(f"Talabalar soni: {eng_mashhur.talabalar_soni}")
+
+
+"""Task 15: Sayohat Agentligi"""
+
+
+
+# **Vazifa:** Xarid nomi, miqdori va narxini saqlaydigan `Xarid` klassini yarating. 
+# 5 ta xarid obyektini yarating va umumiy to'lovni hamda chegirmani hisoblang.
+
+# **Talablar:**
+
+# - `Xarid` klassida `__init__` metodini yarating
+# - Klassda `nomi`, `miqdori`, `narxi` atributlarini saqlang
+# - 5 ta turli xarid obyektini yarating
+# - Barcha xaridlarni ro'yxatga yig'ing
+# - Har bir xaridning summasini (miqdor * narx) hisoblang
+# - Umumiy summani hisoblang
+# - Agar umumiy summa 100000 dan katta bo'lsa, 10% chegirma qo'llang
+
+# **Namuna chiqish:**
+
+# ```
+# === XARIDLAR RO'YXATI ===
+# Non: 2 x 5000 = 10000 so'm
+# Sut: 3 x 12000 = 36000 so'm
+# Go'sht: 1 x 80000 = 80000 so'm
+# Sabzavot: 2 x 15000 = 30000 so'm
+# Meva: 1 x 25000 = 25000 so'm
+
+# Jami: 181000 so'm
+# Chegirma (10%): 18100 so'm
+# TO'LANISHI KERAK: 162900 so'm
+
+# ```
+
+# Bu masalada yig'indi hisoblash va shart (if) operatori yordamida chegirma qo'llash algoritmini o'rganasiz.
+
+class Xarid:
+    def __init__(self, nomi, miqdori, narxi):
+        self.nomi = nomi
+        self.miqdori = miqdori
+        self.narxi = narxi
+        
+non = Xarid("Non", 2, 5000)
+sut = Xarid("Sut", 3, 12000)
+gosht = Xarid("Go'sht", 1, 80000)
+sabzavot = Xarid("Sabzavot", 2, 15000)
+meva = Xarid("Meva", 1, 25000)
+print("=== XARIDLAR RO'YXATI ===")
+
+xaridlar = [non, sut, gosht, sabzavot, meva]
+for x in xaridlar:
+    print(f"{x.nomi}: {x.miqdori} dona x {x.narxi} = {x.miqdori * x.narxi} so'm")
+
+jami = 0
+for x in xaridlar:
+    jami += x.miqdori * x.narxi
+print(f"\nJami: {jami} so'm")
+chegirma = 0
+if jami > 100000:
+    chegirma = jami * 0.1
+    print(f"Chegirma (10%): {chegirma} so'm")
+to_lanishi_kerak = jami - chegirma
+print(f"TO'LANISHI KERAK: {to_lanishi_kerak} so'm")
+
