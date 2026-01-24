@@ -417,63 +417,30 @@
 """Task 15: Sayohat Agentligi"""
 
 
-
-# **Vazifa:** Xarid nomi, miqdori va narxini saqlaydigan `Xarid` klassini yarating. 
-# 5 ta xarid obyektini yarating va umumiy to'lovni hamda chegirmani hisoblang.
-
-# **Talablar:**
-
-# - `Xarid` klassida `__init__` metodini yarating
-# - Klassda `nomi`, `miqdori`, `narxi` atributlarini saqlang
-# - 5 ta turli xarid obyektini yarating
-# - Barcha xaridlarni ro'yxatga yig'ing
-# - Har bir xaridning summasini (miqdor * narx) hisoblang
-# - Umumiy summani hisoblang
-# - Agar umumiy summa 100000 dan katta bo'lsa, 10% chegirma qo'llang
-
-# **Namuna chiqish:**
-
-# ```
-# === XARIDLAR RO'YXATI ===
-# Non: 2 x 5000 = 10000 so'm
-# Sut: 3 x 12000 = 36000 so'm
-# Go'sht: 1 x 80000 = 80000 so'm
-# Sabzavot: 2 x 15000 = 30000 so'm
-# Meva: 1 x 25000 = 25000 so'm
-
-# Jami: 181000 so'm
-# Chegirma (10%): 18100 so'm
-# TO'LANISHI KERAK: 162900 so'm
-
-# ```
-
-# Bu masalada yig'indi hisoblash va shart (if) operatori yordamida chegirma qo'llash algoritmini o'rganasiz.
-
-class Xarid:
-    def __init__(self, nomi, miqdori, narxi):
-        self.nomi = nomi
-        self.miqdori = miqdori
-        self.narxi = narxi
+# class Xarid:
+#     def __init__(self, nomi, miqdori, narxi):
+#         self.nomi = nomi
+#         self.miqdori = miqdori
+#         self.narxi = narxi
         
-non = Xarid("Non", 2, 5000)
-sut = Xarid("Sut", 3, 12000)
-gosht = Xarid("Go'sht", 1, 80000)
-sabzavot = Xarid("Sabzavot", 2, 15000)
-meva = Xarid("Meva", 1, 25000)
-print("=== XARIDLAR RO'YXATI ===")
+# non = Xarid("Non", 2, 5000)
+# sut = Xarid("Sut", 3, 12000)
+# gosht = Xarid("Go'sht", 1, 80000)
+# sabzavot = Xarid("Sabzavot", 2, 15000)
+# meva = Xarid("Meva", 1, 25000)
+# print("=== XARIDLAR RO'YXATI ===")
 
-xaridlar = [non, sut, gosht, sabzavot, meva]
-for x in xaridlar:
-    print(f"{x.nomi}: {x.miqdori} dona x {x.narxi} = {x.miqdori * x.narxi} so'm")
+# xaridlar = [non, sut, gosht, sabzavot, meva]
+# for x in xaridlar:
+#     print(f"{x.nomi}: {x.miqdori} dona x {x.narxi} = {x.miqdori * x.narxi} so'm")
 
-jami = 0
-for x in xaridlar:
-    jami += x.miqdori * x.narxi
-print(f"\nJami: {jami} so'm")
-chegirma = 0
-if jami > 100000:
-    chegirma = jami * 0.1
-    print(f"Chegirma (10%): {chegirma} so'm")
-to_lanishi_kerak = jami - chegirma
-print(f"TO'LANISHI KERAK: {to_lanishi_kerak} so'm")
-
+# jami = 0
+# for x in xaridlar:
+#     jami += x.miqdori * x.narxi
+# print(f"\nJami: {jami} so'm")
+# chegirma = 0
+# if jami > 100000:
+#     chegirma = jami * 0.1
+#     print(f"Chegirma (10%): {chegirma} so'm")
+# to_lanishi_kerak = jami - chegirma
+# print(f"TO'LANISHI KERAK: {to_lanishi_kerak} so'm")
