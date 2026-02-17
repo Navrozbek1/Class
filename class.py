@@ -162,5 +162,4 @@
 # print(b.malumot())
 
 
-
-
+""" Qolgani keyin ! """

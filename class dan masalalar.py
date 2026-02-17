@@ -444,3 +444,6 @@
 #     print(f"Chegirma (10%): {chegirma} so'm")
 # to_lanishi_kerak = jami - chegirma
 # print(f"TO'LANISHI KERAK: {to_lanishi_kerak} so'm")
+
+
+""" Qolgani keyin ! """
