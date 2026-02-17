@@ -128,7 +128,6 @@
 """ 4-Masala: Onlayn do’kon – Mahsulot turlari"""
 
 
-
 # class Mahsulot:
 #     def __init__(self, nom: str, narx: int) -> None:
 #         self.nom = nom
@@ -161,5 +160,7 @@
 # # Xato: Metodlarni chaqirishda () qavslar qolib ketgan
 # print(a.malumot())
 # print(b.malumot())
+
+
 
 
