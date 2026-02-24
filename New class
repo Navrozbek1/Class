@@ -1,0 +1,12 @@
+class BankUser:
+    def __init__(self, frist_name, last_name, age, card_number):
+        self.frist_name = frist_name
+        self.last_name = last_name
+        self.age = age
+        self.card_number = card_number
+
+    def card_info(self):
+        return f'Foydalanuvchi: {self.frist_name} {self.last_name} \nKarta raqami: {self.card_number}'
+
+x = BankUser('Bek', 'Allamov', 26, 8600111122223333)
+print(x.card_info())
